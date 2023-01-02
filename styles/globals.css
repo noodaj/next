@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.button{
-    @apply underline mx-5 hover:text-[#c4a20a]
+.button {
+	@apply mx-5 underline hover:text-[#c4a20a];
+}
+
+.skills {
+	@apply h-10 w-10;
+}
+
+.pageBase {
+	@apply relative m-auto flex h-screen max-w-7xl flex-col items-center justify-evenly space-y-7 overflow-hidden px-10 text-center;
+}
+
+.headerBase {
+	@apply absolute top-24 text-center text-3xl font-semibold uppercase tracking-[15px] text-zinc-600;
 }

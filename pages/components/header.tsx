@@ -16,7 +16,7 @@ export const Header: FC<Props> = () => {
 
 	let iconStyle = { color: "gray", height: "25px", width: "25px" };
 	return (
-		<header className="sticky flex flex-row m-auto justify-between max-w-7xl p-5">
+		<header className="sticky top-0 z-10 m-auto flex max-w-7xl flex-row justify-between py-2">
 			<div>
 				<SocialIcon
 					url="https://www.linkedin.com/in/jadon-loi-a52193260/"
@@ -29,17 +29,17 @@ export const Header: FC<Props> = () => {
 					bgColor="transparent"
 				></SocialIcon>
 			</div>
-			<div className="flex m-auto">
+			<div className="m-auto flex">
 				<Link href="#about">
 					<button className="button">About</button>
 				</Link>
-				<Link href="#about">
+				<Link href="#experience">
 					<button className="button">Experience</button>
 				</Link>
-				<Link href="#about">
+				<Link href="#projects">
 					<button className="button">Projects</button>
 				</Link>
-				<Link href="#about">
+				<Link href="#skills">
 					<button className="button">Skills</button>
 				</Link>
 			</div>
@@ -60,11 +60,13 @@ export const Header: FC<Props> = () => {
 						{copied && <p className="my-8 mx-1 text-xs">Copied</p>}
 					</SocialIcon>
 				</CopyToClipboard>
-				<HiOutlineDocument
-					style={iconStyle}
-					className="hover:cursor-pointer"
-					//add resume to download
-				></HiOutlineDocument>
+				<div className="flex space-x-2 hover:cursor-pointer">
+					<HiOutlineDocument
+						style={iconStyle}
+						//add resume to download
+					></HiOutlineDocument>
+					<p>My Resume</p>
+				</div>
 			</div>
 		</header>
 	);
