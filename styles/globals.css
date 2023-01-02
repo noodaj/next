@@ -15,5 +15,5 @@
 }
 
 .headerBase {
-	@apply absolute top-24 text-center text-3xl font-semibold uppercase tracking-[15px] text-zinc-600;
+	@apply absolute top-24 text-3xl font-semibold uppercase tracking-[20px] text-zinc-600;
 }
