@@ -6,14 +6,18 @@
 	@apply mx-5 underline hover:text-[#c4a20a];
 }
 
-.skills {
-	@apply h-10 w-10;
-}
 
-.pageBase {
-	@apply relative m-auto flex h-screen max-w-7xl flex-col items-center justify-evenly space-y-7 overflow-hidden px-10 text-center;
+@layer components {
+	.pageBase {
+		@apply relative m-auto flex h-screen max-w-7xl flex-col items-center justify-evenly space-y-7 overflow-hidden px-10 text-center;
+	}
+	.projectBase {
+		@apply relative z-0 mx-auto flex h-screen max-w-full flex-col items-center justify-evenly overflow-hidden text-left;
+	}
+	.skills {
+		@apply h-16 w-16;
+	}
 }
-
 .headerBase {
 	@apply absolute top-24 text-3xl font-semibold uppercase tracking-[20px] text-zinc-600;
 }

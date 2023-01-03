@@ -5,7 +5,7 @@ export const Experience: FC = () => {
 	return (
 		<div className="pageBase">
 			<h1 className="headerBase">Experience</h1>
-			<article className="my-1 flex flex-shrink-0 flex-col items-center rounded-lg bg-[#292929] p-5">
+			<article className="z-0 my-1 flex flex-shrink-0 flex-col items-center rounded-lg bg-[#c4a20a]/10 p-5">
 				<h3 className="text-xl font-bold">Teaching Assistant</h3>
 				<p className="text-xs">Aug 2022 - Present</p>
 				<p>Teaching Assistant for Computer Science I</p>

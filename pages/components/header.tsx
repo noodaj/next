@@ -60,12 +60,11 @@ export const Header: FC<Props> = () => {
 						{copied && <p className="my-8 mx-1 text-xs">Copied</p>}
 					</SocialIcon>
 				</CopyToClipboard>
-				<div className="flex space-x-2 hover:cursor-pointer">
+				<div className="flex flex-col space-x-2 hover:cursor-pointer">
 					<HiOutlineDocument
 						style={iconStyle}
 						//add resume to download
 					></HiOutlineDocument>
-					<p>My Resume</p>
 				</div>
 			</div>
 		</header>
