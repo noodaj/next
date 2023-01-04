@@ -3,27 +3,21 @@ import * as SimpleIcons from "react-icons/si";
 import { Projs } from "../items/projects";
 
 export const Projects: FC = () => {
-	const icons = {
+	const icons: any = {
 		ts: "SiTypescript",
 		html: "SiHtml5",
 		css: "SiCss3",
 		react: "SiReact",
 		js: "SiJavascript",
+		next: "SiNextdotjs",
+		tailwind: "SiTailwindcss",
+		mongodb: "SiMongodb",
+		express: "SiExpress",
+		gql: "SiGraphql",
+		sqlite: "SiSqlite",
+		prisma: "SiPrisma",
 	};
 
-	/*
-	SiC,
-	SiCplusplus,
-	SiCss3,
-	SiHtml5,
-	SiJavascript,
-	SiNodedotjs,
-	SiPython,
-	SiReact,
-	SiTailwindcss,
-	SiTypescript,
-	*/
-	
 	return (
 		<div className="projectBase">
 			<h1 className="headerBase">Projects</h1>
@@ -40,13 +34,18 @@ export const Projects: FC = () => {
 							{project.name}
 						</h1>
 
-						<div className="flex flex-row items-center justify-center gap-3 text-xl font-semibold">
+						<div className="flex flex-row items-center justify-center gap-3 text-xl font-semibold" key={i}>
 							Technologies:
 							{project.technologies.map((tech) => {
-								{
+								{	
 									return React.createElement(
-										SimpleIcons[icons[tech]]
+										SimpleIcons[
+											icons[
+												tech
+											] as keyof typeof SimpleIcons
+										]
 									);
+									
 								}
 							})}
 						</div>

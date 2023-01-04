@@ -6,7 +6,6 @@
 	@apply mx-5 underline hover:text-[#c4a20a];
 }
 
-
 @layer components {
 	.pageBase {
 		@apply relative m-auto flex h-screen max-w-7xl flex-col items-center justify-evenly space-y-7 overflow-hidden px-10 text-center;

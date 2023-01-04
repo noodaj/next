@@ -1,9 +1,9 @@
 import Head from "next/head";
-import { Experience } from "./components/experience";
-import { Header } from "./components/header";
-import { Intro } from "./components/intro";
-import { Projects } from "./components/projects";
-import { Skills } from "./components/skills";
+import { Experience } from "../components/experience";
+import { Header } from "../components/header";
+import { Intro } from "../components/intro";
+import { Projects } from "../components/projects";
+import { Skills } from "../components/skills";
 
 export default function Home() {
 	return (
@@ -13,7 +13,7 @@ export default function Home() {
 		>
 			<Head>
 				<title>jadon loi.</title>
-				<link ref="icon" href="logo.jpg"></link>
+				<link rel="icon" href="favicon.ico"/>
 			</Head>
 			<Header />
 			<section id="about" className="snap-start">
