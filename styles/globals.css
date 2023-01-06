@@ -18,5 +18,5 @@
 	}
 }
 .headerBase {
-	@apply absolute ml-[24px] top-24 text-3xl font-semibold uppercase tracking-[20px] text-zinc-600;
+	@apply absolute top-24 ml-[24px] text-3xl font-semibold uppercase tracking-[20px] text-zinc-600;
 }

@@ -19,10 +19,10 @@ export const Projects: FC = () => {
 	};
 
 	return (
-		<div className="relative m-auto flex h-screen flex-col items-center justify-evenly space-y-7 overflow-hidden px-10 text-center ">
+		<div className="relative m-auto flex h-screen flex-col items-center justify-evenly space-y-7 overflow-hidden px-10 text-center">
 			<h1 className="headerBase">Projects</h1>
 			<div
-				className="relative z-20 flex max-w- snap-x snap-mandatory overflow-x-scroll
+				className="scroll relative z-20 flex w-full snap-x snap-mandatory overflow-x-scroll
 			 	scrollbar overflow-y-hidden scrollbar-track-[#242424] scrollbar-thumb-[#c4a20a]/80 md:w-full"
 			>
 				{Projs.map((project, i) => (
@@ -34,10 +34,13 @@ export const Projects: FC = () => {
 							{project.name}
 						</h1>
 
-						<div className="flex flex-row items-center justify-center gap-3 text-lg font-semibold sm:text-xl" key={i}>
+						<div
+							className="flex flex-row items-center justify-center gap-3 text-lg font-semibold sm:text-xl"
+							key={i}
+						>
 							Technologies:
 							{project.technologies.map((tech) => {
-								{	
+								{
 									return React.createElement(
 										SimpleIcons[
 											icons[
@@ -45,7 +48,6 @@ export const Projects: FC = () => {
 											] as keyof typeof SimpleIcons
 										]
 									);
-									
 								}
 							})}
 						</div>
