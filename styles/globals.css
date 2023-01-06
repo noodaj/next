@@ -14,9 +14,9 @@
 		@apply relative z-0 mx-auto flex h-screen max-w-full flex-col items-center justify-evenly overflow-hidden text-left;
 	}
 	.skills {
-		@apply h-16 w-16;
+		@apply h-10 w-10 xs:h-12 xs:w-12 sm:h-14 sm:w-14 md:h-16 md:w-16;
 	}
 }
 .headerBase {
-	@apply absolute top-24 text-3xl font-semibold uppercase tracking-[20px] text-zinc-600;
+	@apply absolute ml-[24px] top-24 text-3xl font-semibold uppercase tracking-[20px] text-zinc-600;
 }

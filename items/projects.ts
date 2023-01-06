@@ -16,7 +16,15 @@ export const Projs: Project[] = [
         to their cart. They can view their cart, edit item counts, remove items, and "purchase" items.
 		Administrators are able to add items, edit items, and remove items.`,
 		link: "https://github.com/noodaj/marketplace",
-		technologies: ["ts", "react", "html", "tailwind", "next", "sqlite", "prisma"],
+		technologies: [
+			"ts",
+			"react",
+			"html",
+			"tailwind",
+			"next",
+			"sqlite",
+			"prisma",
+		],
 		finished: true,
 	},
 	{
@@ -34,11 +42,8 @@ export const Projs: Project[] = [
 	},
 	{
 		name: "Copycat Wordle",
-		description: `Netflix, 2.0 app that has a Log In and Log Out Authentication
-         with Google. It has a beautiful Home Screen with all the movies 
-        looking like Netflix. There is also a subscription page 
-        where you can see your actively monthly subscription. We also use 
-        Stripe Payments for the monthly Netflix Subscriptions`,
+		description: `Wordle, the game that got popularized when COVID was around. It is time for
+		me to create my copycat version of Wordle with the MERN stack.`,
 		link: "",
 		technologies: [
 			"ts",
@@ -47,7 +52,6 @@ export const Projs: Project[] = [
 			"mongodb",
 			"html",
 			"css",
-			"gql",
 		],
 		finished: false,
 	},

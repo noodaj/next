@@ -16,7 +16,7 @@ export const Header: FC<Props> = () => {
 
 	let iconStyle = { color: "gray", height: "25px", width: "25px" };
 	return (
-		<header className="sticky top-0 z-10 m-auto flex max-w-7xl flex-row justify-between py-2">
+		<header className="sticky top-0 z-10 m-auto flex max-w-7xl flex-row justify-evenly p-5 md:flex md:justify-between xl:items-center">
 			<div>
 				<SocialIcon
 					url="https://www.linkedin.com/in/jadon-loi-a52193260/"
@@ -29,7 +29,7 @@ export const Header: FC<Props> = () => {
 					bgColor="transparent"
 				></SocialIcon>
 			</div>
-			<div className="m-auto flex">
+			<div className="m-auto hidden sm:flex">
 				<Link href="#about">
 					<button className="button">About</button>
 				</Link>
@@ -61,10 +61,18 @@ export const Header: FC<Props> = () => {
 					</SocialIcon>
 				</CopyToClipboard>
 				<div className="flex flex-col space-x-2 hover:cursor-pointer">
-					<HiOutlineDocument
-						style={iconStyle}
-						//add resume to download
-					></HiOutlineDocument>
+					<Link
+						href=""
+						download
+						onClick={() => {
+							console.log("clicked");
+						}}
+					>
+						{" "}
+						<HiOutlineDocument
+							style={iconStyle}
+						></HiOutlineDocument>
+					</Link>
 				</div>
 			</div>
 		</header>

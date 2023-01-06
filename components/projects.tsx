@@ -19,22 +19,22 @@ export const Projects: FC = () => {
 	};
 
 	return (
-		<div className="projectBase">
+		<div className="relative m-auto flex h-screen flex-col items-center justify-evenly space-y-7 overflow-hidden px-10 text-center ">
 			<h1 className="headerBase">Projects</h1>
 			<div
-				className="relative z-20 flex w-full snap-x snap-mandatory overflow-x-scroll
-			 	scrollbar overflow-y-hidden scrollbar-track-[#242424] scrollbar-thumb-[#c4a20a]/80"
+				className="relative z-20 flex max-w- snap-x snap-mandatory overflow-x-scroll
+			 	scrollbar overflow-y-hidden scrollbar-track-[#242424] scrollbar-thumb-[#c4a20a]/80 md:w-full"
 			>
 				{Projs.map((project, i) => (
 					<div
 						className="flex h-screen w-screen flex-shrink-0 snap-center flex-col items-center justify-center space-y-5"
 						key={i}
 					>
-						<h1 className="text-center text-4xl font-semibold underline decoration-[#c4a20a]">
+						<h1 className="text-center text-2xl font-semibold underline decoration-[#c4a20a] sm:text-3xl md:text-4xl">
 							{project.name}
 						</h1>
 
-						<div className="flex flex-row items-center justify-center gap-3 text-xl font-semibold" key={i}>
+						<div className="flex flex-row items-center justify-center gap-3 text-lg font-semibold sm:text-xl" key={i}>
 							Technologies:
 							{project.technologies.map((tech) => {
 								{	
@@ -49,7 +49,7 @@ export const Projects: FC = () => {
 								}
 							})}
 						</div>
-						<p className="max-w-4xl text-center text-lg font-normal md:text-left">
+						<p className="max-w-sm text-center text-base font-normal sm:max-w-xl md:max-w-2xl lg:max-w-4xl lg:text-lg">
 							{project.description}
 						</p>
 

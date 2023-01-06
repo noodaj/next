@@ -6,8 +6,8 @@ export const Intro: FC = () => {
 		<div className="pageBase">
 			<h1 className="headerBase">About</h1>
 			<div className="-mb-20 flex-shrink-0 ">
-				<h1 className="relative flex-shrink-0 text-4xl font-bold">
-					Hi <span className="animate-wave">👋</span> I'm Jadon, a
+				<h1 className="relative flex-shrink-0 text-xl font-bold xs:text-2xl sm:text-3xl md:text-4xl">
+					Hi <span>👋</span>, I'm Jadon, a
 					<Typewriter
 						words={[" programmer.", " computer science student."]}
 						loop={true}
