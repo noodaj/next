@@ -22,7 +22,7 @@ export const Skills: FC = () => {
 	return (
 		<div className="pageBase">
 			<h1 className="headerBase">Skills</h1>
-			<ul className="mr-5 grid grid-cols-4 gap-5">
+			<ul className="grid grid-cols-4 gap-5">
 				<li>
 					<SiCplusplus className="skills"></SiCplusplus>
 				</li>

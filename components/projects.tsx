@@ -23,7 +23,7 @@ export const Projects: FC = () => {
 			<h1 className="headerBase">Projects</h1>
 			<div
 				className="scroll z-9 relative flex w-80 snap-x snap-mandatory overflow-x-scroll
-			 	scrollbar overflow-y-hidden scrollbar-track-[#242424] scrollbar-thumb-[#c4a20a]/80 md:w-full"
+			 	scrollbar overflow-y-hidden scrollbar-track-[#242424] scrollbar-thumb-[#c4a20a]/80 md:w-full sm:z-20"
 			>
 				{Projs.map((project, i) => (
 					<div
