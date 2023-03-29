@@ -19,7 +19,7 @@ export const Header: FC<Props> = () => {
 		<header className="sticky top-0 z-10 m-auto flex max-w-7xl flex-row justify-evenly p-5 md:flex md:justify-between xl:items-center">
 			<div>
 				<SocialIcon
-					url="https://www.linkedin.com/in/jadon-loi-a52193260/"
+					url="https://www.linkedin.com/in/jadon-loi/"
 					fgColor="gray"
 					bgColor="transparent"
 				></SocialIcon>
@@ -61,18 +61,11 @@ export const Header: FC<Props> = () => {
 					</SocialIcon>
 				</CopyToClipboard>
 				<div className="flex flex-col space-x-2 hover:cursor-pointer">
-					<Link
-						href=""
-						download
-						onClick={() => {
-							console.log("clicked");
-						}}
-					>
-						{" "}
+					<a href= "/JadonLoiResume.pdf" download>
 						<HiOutlineDocument
 							style={iconStyle}
 						></HiOutlineDocument>
-					</Link>
+					</a>
 				</div>
 			</div>
 		</header>

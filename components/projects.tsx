@@ -22,8 +22,8 @@ export const Projects: FC = () => {
 		<div className="relative m-auto flex h-screen flex-col items-center justify-evenly space-y-7 overflow-hidden text-center">
 			<h1 className="headerBase">Projects</h1>
 			<div
-				className="scroll z-20 relative flex w-full snap-x snap-mandatory overflow-x-scroll
-			 	scrollbar overflow-y-hidden scrollbar-track-[#242424] scrollbar-thumb-[#c4a20a]/80 sm:z-9 md:w-full"
+				className="scroll relative z-20 flex w-full snap-x snap-mandatory overflow-x-scroll
+			 	scrollbar overflow-y-hidden scrollbar-track-[#242424] scrollbar-thumb-[#c4a20a]/80 md:w-full"
 			>
 				{Projs.map((project, i) => (
 					<div
@@ -47,7 +47,10 @@ export const Projects: FC = () => {
 								);
 							})}
 						</div>
-						<p className="max-w-[300px] text-left text-base font-normal xs:max-w-lg xs:text-center sm:max-w-xl md:max-w-2xl lg:max-w-4xl lg:text-lg">
+						<p
+							className="max-w-[300px] text-left text-base font-normal xs:max-w-lg xs:text-center 
+							sm:max-w-xl md:max-w-2xl lg:max-w-4xl lg:text-lg"
+						>
 							{project.description}
 						</p>
 
