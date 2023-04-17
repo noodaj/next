@@ -7,61 +7,43 @@ type Project = {
 };
 export const Projs: Project[] = [
 	{
-		name: "Marketplace",
-		description: `Marketplace is a webapp created with the T3 stack 
-        whose goal was to simulate the functions and feeling of an e-commerce website like Amazon.
-        It was built on NextJS using React, TRPC, Prisma, and Tailwind CSS. The website
-        has login and logout features using Next-Auth. The website allows users to create
-        and login using their accounts and browse through items that can be added
-        to their cart. They can view their cart, edit item counts, remove items, and "purchase" items.
-		Administrators are able to add items, edit items, and remove items.`,
-		link: "https://github.com/noodaj/marketplace",
+		name: "Wordle",
+		description: `Wordle, a game where players guess 5 letter words with limited attempts, created by me.`,
+		link: "https://github.com/noodaj/wordle",
 		technologies: [
+			"vite",
 			"ts",
 			"react",
-			"html",
+			"express",
+			"mongodb",
+			"framer",
 			"tailwind",
-			"next",
-			"sqlite",
-			"prisma",
 		],
 		finished: true,
 	},
 	{
+		name: "Marketplace",
+		description: `Ecommerce is one of the most common ways for us to do shoppping from the comfort
+		of our own homes. Marketplace is a full-stack webapp that allows users to browse, search, and "purchase"
+		products.`,
+		link: "https://github.com/noodaj/marketplace",
+		technologies: ["ts", "react", "tailwind", "next", "sqlite", "prisma"],
+		finished: true,
+	},
+	{
 		name: "To Do List",
-		description: `This very basic todo list was created to help introduce me to 
-		React and how React worked. Users can enter an item in their todo list along
-		with a specifying priority which is defaulted to High. Once a todo has been entered,
-		it will show up in their list of todos in that priority and in the all section. Users can
-		change the current list of priorities with a dropdown menu. Each todo item has an option to
-		change the priority, a completed button, and a delete button. If a todo is completed, it will
-		still remain there unless it has been deleted.`,
+		description: `Like the name implies, this is a basic to do list that helps users manage their tasks 
+		efficiently. Users add tasks that they need to complete and check them off when they are completed. `,
 		link: "https://github.com/noodaj/TodoList",
 		technologies: ["react", "js", "html", "css"],
 		finished: true,
 	},
 	{
-		name: "Copycat Wordle",
-		description: `Wordle, the game that got popularized when COVID was around. It is time for
-		me to create my copycat version of Wordle with the MERN stack.`,
+		name: "Are You A Toxic Player?",
+		description: `League of Legends a popular online MMO, where players compete against each other in 5v5 matches. This
+		webapp is to determine if you are a toxic player by going through game statistics.`,
 		link: "",
-		technologies: [
-			"ts",
-			"react",
-			"express",
-			"mongodb",
-			"html",
-			"css",
-		],
+		technologies: ["ts", "react", "express", "bootstrap"],
 		finished: false,
 	},
-	/*
-	{
-		name: "League Are You Toxic?",
-		description: ``,
-		link: "",
-		technologies: [],
-		finished: false,
-	},
-	*/
 ];

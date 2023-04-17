@@ -16,13 +16,16 @@ export const Projects: FC = () => {
 		gql: "SiGraphql",
 		sqlite: "SiSqlite",
 		prisma: "SiPrisma",
+		framer: "SiFramer",
+		bootstrap: "SiBootstrap",
+		vite: "SiVite",
 	};
 
 	return (
 		<div className="relative m-auto flex h-screen flex-col items-center justify-evenly space-y-7 overflow-hidden text-center">
 			<h1 className="headerBase">Projects</h1>
 			<div
-				className="scroll relative z-20 flex w-full snap-x snap-mandatory overflow-x-scroll
+				className="scroll relative flex w-full snap-x snap-mandatory overflow-x-scroll
 			 	scrollbar overflow-y-hidden scrollbar-track-[#242424] scrollbar-thumb-[#c4a20a]/80 md:w-full"
 			>
 				{Projs.map((project, i) => (
@@ -57,7 +60,7 @@ export const Projects: FC = () => {
 						{project.finished ? (
 							<a
 								href={project.link}
-								className="items-start justify-start rounded-full border bg-[#242424] px-5 py-2
+								className="items-start z-20 justify-start rounded-full border bg-[#242424] px-5 py-2
 							 hover:border-solid hover:border-blue-500 hover:bg-[#293132]"
 							>
 								Github Repo
