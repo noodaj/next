@@ -66,12 +66,12 @@ export const Projects: FC = () => {
 								Github Repo
 							</a>
 						) : (
-							<button
+							<a
 								className="hover: cursor-pointer items-start justify-start rounded-full border bg-[#242424]
 							 px-5 py-2 line-through hover:border-solid hover:border-blue-500 hover:bg-[#293132]"
 							>
 								Work in Progress
-							</button>
+							</a>
 						)}
 					</div>
 				))}

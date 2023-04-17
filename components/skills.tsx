@@ -15,7 +15,8 @@ import {
 	SiReact,
 	SiSqlite,
 	SiTailwindcss,
-	SiTypescript
+	SiTypescript,
+	SiVite,
 } from "react-icons/si";
 
 export const Skills: FC = () => {
@@ -42,13 +43,22 @@ export const Skills: FC = () => {
 					<SiReact className="skills"></SiReact>
 				</li>
 				<li>
-					<SiNodedotjs className="skills"></SiNodedotjs>
-				</li>
-				<li>
 					<SiNextdotjs className="skills"></SiNextdotjs>
 				</li>
 				<li>
+					<SiVite className="skills"></SiVite>
+				</li>
+				<li>
+					<SiNodedotjs className="skills"></SiNodedotjs>
+				</li>
+				<li>
+					<SiExpress className="skills"></SiExpress>
+				</li>
+				<li>
 					<SiPrisma className="skills"></SiPrisma>
+				</li>
+				<li>
+					<SiMongodb className="skills"></SiMongodb>
 				</li>
 				<li>
 					<SiSqlite className="skills"></SiSqlite>
@@ -61,12 +71,6 @@ export const Skills: FC = () => {
 				</li>
 				<li>
 					<SiTailwindcss className="skills"></SiTailwindcss>
-				</li>
-				<li>
-					<SiExpress className="skills hidden"></SiExpress>
-				</li>
-				<li>
-					<SiMongodb className="skills hidden"></SiMongodb>
 				</li>
 				<li>
 					<SiGraphql className="skills hidden"></SiGraphql>
