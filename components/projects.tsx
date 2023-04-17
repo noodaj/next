@@ -60,14 +60,14 @@ export const Projects: FC = () => {
 						{project.finished ? (
 							<a
 								href={project.link}
-								className="items-start z-20 justify-start rounded-full border bg-[#242424] px-5 py-2
+								className="z-20 items-start justify-start rounded-full border bg-[#242424] px-5 py-2
 							 hover:border-solid hover:border-blue-500 hover:bg-[#293132]"
 							>
 								Github Repo
 							</a>
 						) : (
 							<a
-								className="hover: cursor-pointer items-start justify-start rounded-full border bg-[#242424]
+								className="hover: z-20 cursor-pointer items-start justify-start rounded-full border bg-[#242424]
 							 px-5 py-2 line-through hover:border-solid hover:border-blue-500 hover:bg-[#293132]"
 							>
 								Work in Progress
