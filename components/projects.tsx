@@ -19,6 +19,7 @@ export const Projects: FC = () => {
 		framer: "SiFramer",
 		bootstrap: "SiBootstrap",
 		vite: "SiVite",
+		python: "SiPython"
 	};
 
 	return (
